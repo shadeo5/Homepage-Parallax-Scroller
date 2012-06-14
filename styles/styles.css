@@ -1,0 +1,70 @@
+.stellar_container{
+	height: 640px;
+	overflow : scroll;
+	position: relative;
+}
+
+.stellar_container .row{
+	overflow: hidden;
+}
+
+.dynamic_btn{
+	position: relative;
+	margin : 100px 0 0 50px;
+}
+
+.hotspot_container{
+	position: absolute;
+	top:0; left:0;
+}
+
+.hotspot_container a{
+	position: absolute;
+	background : red;
+	border:6px solid #ddd;
+	width : 20px; height:20px;
+	border-radius: 20px;
+}
+
+.hotspot_container a:hover{
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-iteration-count: 10; 
+}
+
+.container_navigation {
+	position: absolute;
+	width : auto; height : auto;
+	margin-top: 610px;
+}
+
+.container_navigation li{
+	width : auto; 
+	padding : 4px 15px;
+	float : left;
+	margin : 0 5px 0 0;
+	color : red;
+	background : #efefef;
+	border-radius : 10px 10px 0 0 ;
+}
+
+
+
+/*CSS3 ANIMATIONS*/
+@-webkit-keyframes pulse {
+  from {
+	-webkit-transform: scale(1.0);
+    	opacity: 0.75;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    opacity: 1.0;
+  }
+  to { 
+    -webkit-transform: scale(1.0);
+    opacity: 0.75;
+  }
+}
+
+
+
